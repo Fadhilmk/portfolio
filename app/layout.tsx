@@ -29,8 +29,8 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
         
         {/* Meta Tags */}
-        <meta name="description" content={metadata.description as string} />
-        <meta name="keywords" content={metadata.keywords as string} />
+        <meta name="description" content={metadata.description ?? "Default description"} />
+        <meta name="keywords" content={metadata.keywords ?? "default, keywords"} />
         
         {/* Title */}
         <title>{metadata.title}</title>
