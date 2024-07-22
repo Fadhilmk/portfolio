@@ -18,6 +18,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Fallback values for metadata properties
+  const description = metadata.description ?? "Default description";
+  const keywords = metadata.keywords ?? "default, keywords";
+
   return (
     <html lang="en">
       <head>
@@ -29,8 +33,8 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
         
         {/* Meta Tags */}
-        <meta name="description" content={metadata.description ?? "Default description"} />
-        <meta name="keywords" content={metadata.keywords ?? "default, keywords"} />
+        <meta name="description" content={description} />
+        <meta name="keywords" content={keywords} />
         
         {/* Title */}
         <title>{metadata.title}</title>
