@@ -4,7 +4,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-blue-600 bg-opacity-50"></div>
       <div className="relative z-10 container mx-auto px-6">
         <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight text-white">
-          Hello, I'm Muhammed Fadhil M.K
+          Hello, I&apos;m Muhammed Fadhil M.K
         </h1>
         <p className="text-lg md:text-2xl mb-8 text-white">
           A passionate Full Stack Web Developer crafting beautiful and efficient web experiences.
